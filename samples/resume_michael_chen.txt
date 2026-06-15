@@ -1,0 +1,109 @@
+MICHAEL CHEN
+Email: m.chen@email.com | Phone: (555) 246-8135 | LinkedIn: linkedin.com/in/michaelchen
+Location: San Jose, CA | GitHub: github.com/mchen
+
+PROFESSIONAL SUMMARY
+Senior systems engineer with 8+ years of experience in designing and maintaining scalable distributed systems. Expert in cloud architecture, containerization, and microservices. Strong background in DevOps practices and infrastructure automation. Proven ability to optimize system performance and reliability.
+
+PROFESSIONAL EXPERIENCE
+
+DevOps Lead / Senior Systems Engineer
+CloudScale Inc., San Jose, CA | August 2020 - Present (3 years 5 months)
+- Led infrastructure modernization initiative, migrating from traditional servers to Kubernetes
+- Designed and implemented multi-region AWS deployment strategy
+- Reduced infrastructure costs by 35% through optimization and resource management
+- Implemented comprehensive monitoring using ELK Stack and Prometheus
+- Managed 15-person engineering team including deployment and infrastructure responsibilities
+- Established CI/CD pipelines using Jenkins, reducing deployment time from 1 hour to 5 minutes
+- Technologies: Kubernetes, Docker, AWS (EC2, S3, RDS, Lambda), Terraform, Python, Bash
+
+Senior Software Engineer - Infrastructure
+DataWorks Corp., Sunnyvale, CA | March 2019 - July 2020 (1 year 5 months)
+- Designed microservices infrastructure serving 5M+ daily active users
+- Implemented service mesh using Istio for traffic management
+- Created infrastructure-as-code using Terraform for reproducible deployments
+- Established disaster recovery procedures achieving 99.99% uptime
+- Mentored team of 4 engineers on Kubernetes and cloud best practices
+- Technologies: Kubernetes, Docker, AWS, Terraform, Go, Python
+
+Software Engineer - Backend
+TechSolutions Ltd., San Francisco, CA | June 2017 - February 2019 (1 year 9 months)
+- Developed Python microservices using REST APIs
+- Implemented message queue system using RabbitMQ handling 100K+ messages/day
+- Created database optimization scripts improving query performance by 50%
+- Built monitoring dashboards using Grafana
+- Technologies: Python, Java, PostgreSQL, RabbitMQ, Docker, AWS
+
+Software Developer
+StartupCore, Berkeley, CA | January 2016 - May 2017 (1 year 5 months)
+- Developed web applications using Java and Node.js
+- Implemented RESTful web services
+- Participated in code reviews and architectural discussions
+- Technologies: Java, Node.js, MySQL, Linux
+
+EDUCATION
+
+Bachelor of Science in Computer Science
+San Francisco State University | Graduated: December 2015
+GPA: 3.6/4.0
+
+TECHNICAL SKILLS
+
+Languages: Python, Java, Go, Bash, JavaScript, SQL
+Backend Frameworks: Spring Boot, Django, Express.js
+Cloud Platforms: AWS (EC2, RDS, S3, Lambda, VPC, IAM), Azure
+Containerization: Docker, Kubernetes, Docker Swarm
+Infrastructure as Code: Terraform, Ansible, CloudFormation
+CI/CD: Jenkins, GitLab CI, GitHub Actions, CircleCI
+Monitoring & Logging: ELK Stack, Prometheus, Grafana, Datadog
+Databases: PostgreSQL, MySQL, MongoDB, Redis, Cassandra
+Messaging: RabbitMQ, Kafka, SQS
+Version Control: Git, GitHub, GitLab
+Operating Systems: Linux (Ubuntu, CentOS), macOS, Windows
+Networking: TCP/IP, DNS, Load Balancing, VPN
+
+CERTIFICATIONS
+
+AWS Certified Solutions Architect - Professional | 2022
+Certified Kubernetes Administrator (CKA) | 2021
+AWS Certified DevOps Engineer - Professional | 2021
+
+NOTABLE ACHIEVEMENTS
+
+Cloud Migration Project
+- Successfully migrated on-premise infrastructure to AWS for 200-person company
+- Reduced monthly infrastructure costs from $50K to $32K
+- Achieved near-zero downtime during migration
+- Created comprehensive disaster recovery plan
+
+Kubernetes Adoption Initiative
+- Led company-wide adoption of Kubernetes platform
+- Trained 30+ engineers on Kubernetes fundamentals
+- Achieved 98% cluster uptime across production environments
+- Reduced deployment time by 80%
+
+Performance Optimization
+- Identified and fixed database bottlenecks, improving query time by 60%
+- Optimized container images reducing deployment size by 40%
+- Implemented caching strategies reducing API latency from 500ms to 50ms
+
+PROJECTS
+
+Multi-Region Kubernetes Cluster
+- Designed and deployed highly available Kubernetes cluster across 3 AWS regions
+- Implemented automated failover and load balancing
+- Achieved 99.99% uptime SLA
+
+Infrastructure Monitoring Platform
+- Built comprehensive monitoring platform using Prometheus and Grafana
+- Integrated with alerting system for proactive issue detection
+- Provided dashboards for real-time system visibility
+
+ADDITIONAL INFORMATION
+
+Languages: English (Native), Mandarin Chinese (Fluent)
+Open Source: Active contributor to Kubernetes and Terraform projects
+Conferences: Speaker at KubeCon 2022 and 2023
+Writing: Published articles on DevOps and cloud architecture on Medium
+Volunteer: Mentor for Code2040 (encouraging students from underrepresented backgrounds)
+Interests: Distributed Systems, Infrastructure Automation, Performance Optimization, Cloud Architecture

@@ -1,0 +1,97 @@
+# Sample Job Description - Senior Software Engineer
+
+## Position Title
+Senior Software Engineer - Full Stack Development
+
+## Company
+TechCorp Solutions
+
+## Location
+San Francisco, CA (Remote/Hybrid)
+
+## Job Type
+Full-time
+
+## Experience Level
+5-8 years
+
+---
+
+## About the Role
+
+We are seeking an experienced Senior Software Engineer to join our growing development team. You will be responsible for designing, developing, and maintaining scalable web applications and microservices. This is an excellent opportunity to work with cutting-edge technologies and contribute to products used by millions of users worldwide.
+
+## Key Responsibilities
+
+- Design and develop microservices using modern architecture patterns
+- Write clean, maintainable, and well-tested code
+- Collaborate with product managers and designers to implement new features
+- Mentor junior developers and conduct code reviews
+- Optimize application performance and ensure scalability
+- Participate in architectural discussions and technical design reviews
+- Deploy and maintain applications on cloud platforms (AWS/Azure)
+- Troubleshoot production issues and implement fixes
+
+## Required Qualifications
+
+- 5+ years of professional software development experience
+- Strong proficiency in Java or Python
+- Experience with SQL and NoSQL databases (PostgreSQL, MongoDB)
+- Solid understanding of REST APIs and microservices architecture
+- Experience with Docker and Kubernetes
+- Familiarity with CI/CD pipelines and DevOps practices
+- Git version control expertise
+- Strong problem-solving and communication skills
+- Experience with Agile/Scrum methodologies
+
+## Preferred Qualifications
+
+- Experience with React or Vue.js for frontend development
+- Proficiency in Node.js/Express
+- Knowledge of AWS services (EC2, RDS, S3, Lambda)
+- Experience with message queues (RabbitMQ, Kafka)
+- Familiarity with GraphQL
+- Experience with monitoring and logging tools (ELK Stack, Datadog)
+- Previous experience in a startup environment
+- Contributions to open-source projects
+- AWS or Azure certifications
+
+## Technical Stack
+
+- **Backend**: Java, Python, Node.js
+- **Frontend**: React, Vue.js, Angular
+- **Databases**: PostgreSQL, MongoDB, Redis
+- **DevOps**: Docker, Kubernetes, Jenkins
+- **Cloud**: AWS, Azure, GCP
+- **Tools**: Git, Jira, Confluence, VSCode
+
+## What We Offer
+
+- Competitive salary: $150,000 - $200,000/year
+- Comprehensive health insurance
+- 401(k) matching (5%)
+- Professional development budget
+- Remote work flexibility
+- 20 days PTO
+- Stock options
+- Collaborative and inclusive team environment
+
+## How to Apply
+
+Submit your resume, cover letter, and portfolio links to: careers@techcorp.com
+
+---
+
+## Interview Process
+
+1. **Phone Screen** (30 mins) - Initial conversation about your background
+2. **Technical Assessment** (90 mins) - Coding challenges and problem-solving
+3. **System Design** (60 mins) - Design a scalable system
+4. **Behavioral Interview** (60 mins) - Team fit and cultural alignment
+5. **Final Round** (30 mins) - Meet with engineering manager
+
+---
+
+**Application Deadline**: December 31, 2024
+**Posted**: January 1, 2024
+**Salary Range**: $150,000 - $200,000

@@ -1,0 +1,82 @@
+JOHN DOE
+Email: john.doe@email.com | Phone: (555) 123-4567 | LinkedIn: linkedin.com/in/johndoe
+Location: San Francisco, CA
+
+PROFESSIONAL SUMMARY
+Experienced full-stack software engineer with 7 years of expertise in designing and deploying scalable web applications. Proficient in Java, Python, and JavaScript. Strong background in microservices architecture, cloud technologies, and DevOps. Proven track record of leading development teams and mentoring junior developers.
+
+PROFESSIONAL EXPERIENCE
+
+Senior Software Engineer
+TechFlow Inc., San Francisco, CA | January 2022 - Present (2 years 1 month)
+- Designed and implemented microservices architecture serving 10M+ users
+- Led team of 5 engineers in developing and deploying critical payment processing system
+- Reduced API response time by 45% through optimization and caching strategies
+- Implemented CI/CD pipelines using Jenkins and Docker, reducing deployment time from 2 hours to 15 minutes
+- Mentored 3 junior developers, leading code reviews and technical training sessions
+- Technologies: Java, Spring Boot, PostgreSQL, Docker, Kubernetes, AWS (EC2, RDS, S3)
+
+Software Engineer II
+DataSystems Corp., San Francisco, CA | June 2019 - December 2021 (2 years 7 months)
+- Developed RESTful APIs using Python and Flask, handling 5M+ requests daily
+- Built and maintained Kubernetes infrastructure for containerized microservices
+- Collaborated with product team to implement new features using React frontend
+- Reduced database query time by 30% through indexing and query optimization
+- Technologies: Python, Node.js, React, MongoDB, Kubernetes, AWS
+
+Software Engineer
+WebDynamics LLC, San Jose, CA | July 2018 - May 2019 (11 months)
+- Developed full-stack web applications using Java and React
+- Implemented real-time data processing using Apache Kafka
+- Created comprehensive API documentation and endpoint testing
+- Technologies: Java, React, PostgreSQL, Apache Kafka, Docker
+
+Junior Software Developer
+StartupX, Palo Alto, CA | March 2017 - June 2018 (1 year 4 months)
+- Developed backend services using Python and Django
+- Built responsive frontend components using Vue.js
+- Participated in Agile development and sprint planning
+- Technologies: Python, Django, Vue.js, MySQL
+
+EDUCATION
+
+Bachelor of Science in Computer Science
+University of California, Berkeley | Graduated: May 2017
+GPA: 3.8/4.0
+Relevant Coursework: Data Structures, Algorithms, Database Systems, Software Engineering
+
+TECHNICAL SKILLS
+
+Languages: Java, Python, JavaScript, SQL, HTML, CSS
+Backend Frameworks: Spring Boot, Django, Flask, Express.js
+Frontend Technologies: React, Vue.js, HTML5, CSS3, Responsive Design
+Databases: PostgreSQL, MongoDB, Redis, MySQL
+DevOps & Cloud: Docker, Kubernetes, Jenkins, AWS (EC2, RDS, S3, Lambda), Azure
+Tools & Platforms: Git, GitHub, Jira, Confluence, VS Code, IntelliJ IDEA
+Methodologies: Agile, Scrum, RESTful API Design, Microservices Architecture
+
+CERTIFICATIONS
+
+AWS Certified Solutions Architect - Associate | Certification ID: AWS-SA-2021-12345
+Docker Certified Associate | Certification ID: DCA-2021-67890
+
+PROJECTS & ACCOMPLISHMENTS
+
+Real-time Analytics Dashboard
+- Designed and implemented real-time analytics dashboard using React and WebSockets
+- Processed and displayed data from 50+ data sources simultaneously
+- Reduced data latency from 30 seconds to 2 seconds
+- Tech Stack: React, Node.js, PostgreSQL, WebSockets
+
+E-Commerce Platform Optimization
+- Optimized legacy e-commerce platform resulting in 40% improvement in page load time
+- Implemented caching strategies and database indexing
+- Migrated from monolithic architecture to microservices
+- Tech Stack: Java, Spring Boot, PostgreSQL, Redis, Docker
+
+ADDITIONAL INFORMATION
+
+Languages: English (Native), Spanish (Intermediate)
+Open Source Contributions: Active contributor to Apache Kafka and Spring Framework projects
+Volunteer: Mentor at Code2040 (teaching coding to underrepresented minorities)
+Interests: AI/ML, Cloud Architecture, System Design, Tech Writing
