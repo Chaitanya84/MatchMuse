@@ -6,6 +6,7 @@ Supports multilingual job descriptions and resumes with automatic translation
 
 import streamlit as st
 import os
+import re
 from pathlib import Path
 from fpdf import FPDF
 from resume_processor import ResumeProcessor
@@ -149,6 +150,41 @@ def _render_login() -> None:
                 st.rerun()
             else:
                 st.error("❌ Invalid username or password.")
+
+
+def _normalize_name(value: str) -> str:
+    """Normalize candidate names for stable matching across model output and uploaded files."""
+    return re.sub(r'[^a-z0-9]+', '', (value or '').lower())
+
+
+def _find_resume_by_candidate_name(resumes_data: list, candidate_name: str):
+    """Find the uploaded resume entry matching a ranked candidate name."""
+    if not candidate_name:
+        return None
+
+    normalized_target = _normalize_name(candidate_name)
+    exact_match = next((r for r in resumes_data if r.get('name') == candidate_name), None)
+    if exact_match:
+        return exact_match
+
+    normalized_match = next(
+        (r for r in resumes_data if _normalize_name(r.get('name', '')) == normalized_target),
+        None,
+    )
+    if normalized_match:
+        return normalized_match
+
+    partial_match = next(
+        (
+            r for r in resumes_data
+            if normalized_target and (
+                normalized_target in _normalize_name(r.get('name', ''))
+                or _normalize_name(r.get('name', '')) in normalized_target
+            )
+        ),
+        None,
+    )
+    return partial_match
 
 
 # Guard: stop here and show login if not authenticated
@@ -334,7 +370,7 @@ if not st.session_state.analyzed:
                             continue
                         
                         candidate_name = ResumeProcessor.get_candidate_name(
-                            str(file_path), uploaded_file.name
+                            str(file_path), uploaded_file.name, content
                         )
                         resumes_data.append({
                             'name': candidate_name,
@@ -426,21 +462,35 @@ if not st.session_state.analyzed:
                     
                     if 'rankings' in ranking_result and ranking_result['rankings']:
                         st.success(f"✅ Generated rankings for {len(ranking_result['rankings'])} candidates")
-                        top_candidates = ranking_result['rankings'][:2]
+                        sorted_rankings = sorted(
+                            ranking_result['rankings'],
+                            key=lambda item: (
+                                item.get('rank', 10**9),
+                                -(item.get('score', 0) or 0),
+                            ),
+                        )
+                        top_candidates = sorted_rankings[:1]
                         
                         for idx, ranking in enumerate(top_candidates, 1):
                             candidate_name = ranking.get('candidate_name', 'Unknown')
-                            st.info(f"Generating interview questions for Candidate {idx}: {candidate_name}...")
+                            st.info(f"Generating interview questions for top-ranked Candidate {idx}: {candidate_name}...")
                             
-                            resume_content = next(
-                                (r['content'] for r in resumes_data if r['name'] == candidate_name),
-                                None
-                            )
-                            
-                            if resume_content:
+                            resume_entry = _find_resume_by_candidate_name(resumes_data, candidate_name)
+                            resume_content = resume_entry['content'] if resume_entry else None
+
+                            if resume_content is None:
+                                # Name matching failed — still generate questions from job description
+                                st.warning(
+                                    f"⚠️ Could not match '{candidate_name}' to an uploaded resume. "
+                                    f"Generating questions from job description only."
+                                )
+
+                            if resume_content is not None or translated_job_description:
                                 try:
                                     questions = nexus_client.generate_questions(
-                                        resume_content, candidate_name
+                                        resume_content,
+                                        candidate_name,
+                                        translated_job_description,
                                     )
                                     questions_for_candidates[candidate_name] = questions
                                     st.success(f"✅ Generated questions for {candidate_name}")

@@ -6,10 +6,10 @@ services:
     buildCommand: pip install -r requirements.txt
     startCommand: streamlit run app_streamlit.py --server.port $PORT --server.address 0.0.0.0 --server.headless true --server.enableCORS false
     envVars:
-      - key: NEXUS_API_KEY
+      - key: OPENAI_API_KEY
         sync: false          # Set this manually in the Render dashboard
-      - key: NEXUS_API_URL
-        value: https://genai-nexus.api.corpinter.net/
+      - key: OPENAI_MODEL
+        value: gpt-4o
       - key: MATCHMUSE_USERNAME
         sync: false          # Set this manually in the Render dashboard
       - key: MATCHMUSE_PASSWORD

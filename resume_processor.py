@@ -106,10 +106,31 @@ class ResumeProcessor:
             return False, '', f"Error reading Word document: {str(e)}"
     
     @staticmethod
-    def get_candidate_name(filepath, filename):
-        """Extract candidate name from filename"""
+    def get_candidate_name(filepath, filename, content: str = ''):
+        """Extract candidate name from the resume content first line.
+        Falls back to the filename when the content is unavailable.
+        """
+        # Try to get the name from the first non-empty line of the resume
+        if content:
+            for line in content.splitlines():
+                stripped = line.strip()
+                # Skip lines that look like section headers, email addresses, URLs or phone numbers
+                if not stripped:
+                    continue
+                if any(ch in stripped for ch in ('@', 'http', 'linkedin', 'github', '|', '+')):
+                    continue
+                if stripped.upper() in (
+                    'RESUME', 'CURRICULUM VITAE', 'CV', 'PERSONAL INFORMATION',
+                    'PROFESSIONAL SUMMARY', 'WORK EXPERIENCE', 'EDUCATION', 'SKILLS',
+                ):
+                    continue
+                # Looks like a name if it has 1-5 words and is mostly alpha
+                words = stripped.split()
+                if 1 <= len(words) <= 5 and sum(w.replace('-', '').isalpha() for w in words) >= len(words) - 1:
+                    return stripped
+
+        # Fallback: derive from filename
         name = filename.rsplit('.', 1)[0]
-        # Remove common prefixes
         for prefix in ['resume_', 'cv_', 'cv-', 'resume-']:
             if name.lower().startswith(prefix):
                 name = name[len(prefix):]

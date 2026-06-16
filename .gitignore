@@ -1,0 +1,24 @@
+# Secrets — never commit
+.env
+
+# Python artefacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Streamlit runtime cache
+.streamlit/secrets.toml
+
+# OS artefacts
+.DS_Store
+Thumbs.db
+
+# Temporary upload dirs created at runtime
+/tmp/
